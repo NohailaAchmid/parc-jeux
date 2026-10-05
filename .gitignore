@@ -1,0 +1,20 @@
+# Configuration locale
+.env
+
+# Système Windows
+Thumbs.db
+Desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+
+# Cache
+cache/
+tmp/

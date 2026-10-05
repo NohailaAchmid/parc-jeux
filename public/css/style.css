@@ -1,0 +1,3908 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #fffdf0;
+    color: #17345f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    height: 92px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #fffdf0;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    min-width: 290px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-text span {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 29px;
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+.logo-text span strong {
+    color: #f0444f;
+}
+
+.logo-text small {
+    margin-top: 5px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #f0444f;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 38px;
+
+    flex: 1;
+}
+
+.navbar a {
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    position: relative;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #17345f;
+
+    transition: 0.25s ease;
+}
+
+.navbar a i {
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #f0444f;
+}
+
+.navbar a.active {
+    color: #f0444f;
+}
+
+.navbar a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 4px;
+
+    background: #f0444f;
+
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.btn-login {
+    width: 135px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 23px;
+
+    background: #f0444f;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition: 0.25s ease;
+}
+
+.btn-login i {
+    font-size: 12px;
+}
+
+.btn-login:hover {
+    background: #db303c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 100%;
+
+    height: 470px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(7, 39, 75, 0.88) 0%,
+            rgba(7, 39, 75, 0.62) 30%,
+            rgba(7, 39, 75, 0.12) 65%,
+            rgba(7, 39, 75, 0) 100%
+        ),
+
+        url("../images/parc-hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 5;
+
+    margin-left: 8%;
+
+    width: 680px;
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero-title {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 76px;
+
+    font-weight: 800;
+
+    line-height: 0.9;
+
+    letter-spacing: -1.5px;
+
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+.hero-title span {
+    display: block;
+}
+
+.hero-title strong {
+    color: #ffd329;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-description {
+    width: 550px;
+
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.btn-primary {
+    width: 200px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    background: #f0444f;
+
+    color: white;
+
+    border-radius: 26px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    transition: 0.25s ease;
+}
+
+.btn-primary i {
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: #db303c;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(240, 68, 79, 0.3);
+}
+
+
+/* =========================================
+   DECORATIONS
+========================================= */
+
+.decoration {
+    position: absolute;
+
+    z-index: 4;
+
+    border-radius: 10px;
+}
+
+.decoration-yellow {
+    width: 40px;
+    height: 5px;
+
+    background: #ffd329;
+
+    left: 3.8%;
+    top: 31%;
+
+    transform: rotate(20deg);
+}
+
+.decoration-red {
+    width: 28px;
+    height: 5px;
+
+    background: #f0444f;
+
+    left: 5%;
+    top: 20%;
+
+    transform: rotate(50deg);
+}
+
+.decoration-blue {
+    width: 30px;
+    height: 5px;
+
+    background: #315ee9;
+
+    left: 6.5%;
+    top: 42%;
+
+    transform: rotate(-15deg);
+}
+
+.decoration-yellow-2 {
+    width: 30px;
+    height: 5px;
+
+    background: #ffd329;
+
+    left: 4.8%;
+    top: 55%;
+
+    transform: rotate(-20deg);
+}
+
+.decoration-red-2 {
+    width: 28px;
+    height: 5px;
+
+    background: #f0444f;
+
+    left: 19%;
+    top: 21%;
+
+    transform: rotate(130deg);
+}
+
+
+/* =========================================
+   COEUR
+========================================= */
+
+.hero-heart {
+    position: absolute;
+
+    left: 18%;
+
+    top: 18%;
+
+    z-index: 5;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 43px;
+
+    transform: rotate(-12deg);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding: 0 4%;
+    }
+
+    .logo {
+        min-width: 240px;
+    }
+
+    .navbar {
+        gap: 22px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero-content {
+        margin-left: 6%;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        padding: 15px 25px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .navbar {
+        order: 3;
+
+        width: 100%;
+
+        gap: 20px;
+    }
+
+    .navbar a {
+        height: 40px;
+    }
+
+    .hero {
+        height: 520px;
+    }
+
+    .hero-content {
+        width: 90%;
+
+        margin-left: 7%;
+    }
+
+    .hero-title {
+        font-size: 55px;
+    }
+
+    .hero-description {
+        width: 90%;
+
+        font-size: 14px;
+    }
+}
+/* =========================================
+   AVANTAGES
+========================================= */
+
+.advantages {
+    width: 100%;
+
+    min-height: 105px;
+
+    padding: 18px 5%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    background: #fffdf8;
+
+    position: relative;
+
+    z-index: 10;
+
+    border-bottom: 1px solid #f0eee7;
+}
+
+
+/* =========================================
+   ITEM
+========================================= */
+
+.advantage-item {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 5px 25px;
+
+    border-right: 1px solid #e8e5dc;
+}
+
+.advantage-item:last-child {
+    border-right: none;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.advantage-icon {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 24px;
+}
+
+
+/* COULEURS */
+
+.icon-red {
+    background: #f0444f;
+}
+
+.icon-yellow {
+    background: #ffc928;
+}
+
+.icon-green {
+    background: #39b85a;
+}
+
+.icon-blue {
+    background: #287be0;
+}
+
+
+/* =========================================
+   TEXTE
+========================================= */
+
+.advantage-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.advantage-content h3 {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    color: #17345f;
+
+    white-space: nowrap;
+}
+
+.advantage-content p {
+    font-family: "Nunito", sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    color: #526783;
+
+    white-space: nowrap;
+}
+/* =========================================
+   NOS JEUX
+========================================= */
+
+.games-section {
+    width: 100%;
+
+    padding: 35px 5% 45px;
+
+    background: #ffffff;
+
+    position: relative;
+}
+
+
+/* =========================================
+   TITRE DE SECTION
+========================================= */
+
+.section-heading {
+    text-align: center;
+
+    position: relative;
+
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    display: inline-block;
+
+    font-family: "Baloo 2", cursive;
+
+    font-size: 43px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    color: #17345f;
+
+    position: relative;
+
+    margin: 0 35px;
+}
+
+.section-heading p {
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #526783;
+}
+
+
+/* =========================================
+   DECORATIONS DU TITRE
+========================================= */
+
+.heading-decoration {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    vertical-align: middle;
+}
+
+.heading-decoration span {
+    display: block;
+
+    width: 28px;
+    height: 5px;
+
+    border-radius: 10px;
+}
+
+.left-decoration span:first-child {
+    background: #ffd329;
+
+    transform: rotate(25deg);
+}
+
+.left-decoration span:last-child {
+    background: #c63d9f;
+
+    transform: rotate(-20deg);
+}
+
+.right-decoration span:first-child {
+    background: #ffd329;
+
+    transform: rotate(-25deg);
+}
+
+.right-decoration span:last-child {
+    background: #f0444f;
+
+    transform: rotate(20deg);
+}
+
+
+/* =========================================
+   FILTRES
+========================================= */
+
+.games-filters {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    height: 31px;
+
+    padding: 0 22px;
+
+    border: 1px solid #e2e6eb;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #31567e;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.filter-btn:hover {
+    border-color: #1988e8;
+
+    color: #1988e8;
+
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: #1689e9;
+
+    border-color: #1689e9;
+
+    color: white;
+
+    box-shadow: 0 4px 10px rgba(22, 137, 233, 0.18);
+}
+
+
+/* =========================================
+   GRILLE DES JEUX
+========================================= */
+
+.games-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+    max-width: 1380px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   CARTE
+========================================= */
+
+.game-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: white;
+
+    box-shadow: 0 3px 12px rgba(23, 52, 95, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(23, 52, 95, 0.18);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.game-image {
+    width: 100%;
+
+    height: 148px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.game-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.game-card:hover .game-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   BANDEAU
+========================================= */
+
+.game-info {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 47px;
+
+    padding: 7px 9px 7px 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: white;
+}
+
+.game-text h3 {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    margin-bottom: 2px;
+}
+
+.game-text p {
+    font-family: "Nunito", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   FLECHE
+========================================= */
+
+.game-arrow {
+    width: 25px;
+    height: 25px;
+
+    min-width: 25px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+.red-card {
+    background: #f0444f;
+}
+
+.yellow-card {
+    background: #f3b91f;
+}
+
+.blue-card {
+    background: #1689e9;
+}
+
+.green-card {
+    background: #31ad54;
+}
+
+.purple-card {
+    background: #7845c5;
+}
+
+.cyan-card {
+    background: #18a8dc;
+}
+
+.pink-card {
+    background: #d43a9c;
+}
+
+.orange-card {
+    background: #f58a13;
+}
+
+.turquoise-card {
+    background: #16aaa7;
+}
+
+
+.red-card .game-arrow {
+    color: #f0444f;
+}
+
+.yellow-card .game-arrow {
+    color: #f3b91f;
+}
+
+.blue-card .game-arrow {
+    color: #1689e9;
+}
+
+.green-card .game-arrow {
+    color: #31ad54;
+}
+
+.purple-card .game-arrow {
+    color: #7845c5;
+}
+
+.cyan-card .game-arrow {
+    color: #18a8dc;
+}
+
+.pink-card .game-arrow {
+    color: #d43a9c;
+}
+
+.orange-card .game-arrow {
+    color: #f58a13;
+}
+
+.turquoise-card .game-arrow {
+    color: #16aaa7;
+}
+/* =========================================
+   AGRANDIR LA SECTION NOS JEUX
+========================================= */
+
+.games-section {
+    padding: 55px 5% 70px;
+}
+
+/* TITRE */
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 54px;
+}
+
+.section-heading p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* FILTRES */
+
+.games-filters {
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    height: 40px;
+    padding: 0 27px;
+    font-size: 14px;
+}
+
+
+/* GRILLE */
+
+.games-grid {
+    gap: 18px;
+    max-width: 1450px;
+}
+
+
+/* CARTES */
+
+.game-image {
+    height: 185px;
+}
+
+
+/* BANDEAU */
+
+.game-info {
+    height: 58px;
+    padding: 9px 12px 9px 15px;
+}
+
+
+/* TEXTE */
+
+.game-text h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.game-text p {
+    font-size: 10px;
+}
+
+
+/* BOUTON FLECHE */
+
+.game-arrow {
+    width: 29px;
+    height: 29px;
+    min-width: 29px;
+    font-size: 11px;
+}
+/* Bandeau des cartes plus fin */
+
+.game-info {
+    height: 45px;
+    padding: 5px 10px 5px 12px;
+}
+
+.game-text h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.game-text p {
+    font-size: 12px;
+}
+
+.game-arrow {
+    width: 23px;
+    height: 23px;
+    min-width: 23px;
+    font-size: 9px;
+}
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    width: 100% !important;
+    height: 105px !important;
+
+    margin: 0 !important;
+    padding: 8px 55px 5px !important;
+
+    background: #102f59 !important;
+
+    position: relative !important;
+    overflow: hidden !important;
+
+    color: white;
+}
+
+
+/* =====================================================
+   CONTENU
+===================================================== */
+
+.footer-container {
+    width: 100%;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.footer-logo {
+    width: 250px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 155px !important;
+    height: 65px !important;
+
+    object-fit: contain;
+
+    object-position: left center;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.footer-nav {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    white-space: nowrap;
+}
+
+.footer-nav a {
+    color: white !important;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 15px !important;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.footer-nav a:hover {
+    color: #ffd329 !important;
+}
+
+.footer-nav span {
+    color: rgba(255,255,255,0.4);
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   RESEAUX SOCIAUX
+===================================================== */
+
+.footer-social {
+    width: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 4px;
+}
+
+.footer-social a {
+    width: 27px !important;
+    height: 27px !important;
+
+    border-radius: 50%;
+
+    background: #ffffff !important;
+
+    color: #102f59 !important;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   COPYRIGHT
+===================================================== */
+
+.footer-bottom {
+    position: absolute;
+
+    right: 55px;
+
+    bottom: 7px;
+
+    color: rgba(255,255,255,0.75);
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 10px;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   DECORATIONS
+===================================================== */
+
+.footer-decoration {
+    position: absolute;
+
+    width: 45px;
+
+    height: 5px;
+
+    border-radius: 10px;
+
+    z-index: 5;
+}
+
+
+/* GAUCHE */
+
+.footer-yellow {
+    left: -10px;
+
+    bottom: 38px;
+
+    background: #ffd329;
+
+    transform: rotate(-35deg);
+}
+
+.footer-blue {
+    left: -5px;
+
+    bottom: 20px;
+
+    background: #1689e9;
+
+    transform: rotate(25deg);
+}
+
+.footer-red {
+    left: -10px;
+
+    bottom: 5px;
+
+    background: #f0444f;
+
+    transform: rotate(-20deg);
+}
+
+
+/* DROITE */
+
+.footer-green {
+    right: -10px;
+
+    top: 10px;
+
+    background: #39b85a;
+
+    transform: rotate(-45deg);
+}
+
+.footer-pink {
+    right: 0;
+
+    top: 30px;
+
+    background: #d43a9c;
+
+    transform: rotate(35deg);
+}
+/* =====================================================
+   BILLETS & TARIFS
+   ===================================================== */
+
+.tickets-section {
+    width: 100%;
+    padding: 20px 5% 80px;
+    background: white;
+    position: relative;
+}
+
+
+/* ---------- TITRE ---------- */
+
+.tickets-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.tickets-header h2 {
+    font-family: "Baloo 2", cursive;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    color: #17345f;
+    margin: 0 0 10px;
+}
+
+.tickets-header p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #6d7890;
+    margin: 0;
+}
+
+
+/* ---------- GRILLE ---------- */
+
+.tickets-grid {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+
+/* ---------- CARTE ---------- */
+
+.ticket-card {
+    min-height: 315px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(23, 52, 95, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.ticket-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(23, 52, 95, 0.18);
+}
+
+
+/* ---------- BANDE SUPÉRIEURE ---------- */
+
+.ticket-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+}
+
+
+/* couleurs */
+
+.ticket-child::before {
+    background: #f0444f;
+}
+
+.ticket-adult::before {
+    background: #4a78d8;
+}
+
+.ticket-family::before {
+    background: #f5bd1f;
+}
+
+.ticket-pass::before {
+    background: #35b85a;
+}
+
+
+/* ---------- ICÔNE ---------- */
+
+.ticket-icon {
+    width: 68px;
+    height: 68px;
+
+    margin: 30px auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+
+/* couleurs icônes */
+
+.ticket-child .ticket-icon {
+    background: #f0444f;
+}
+
+.ticket-adult .ticket-icon {
+    background: #4a78d8;
+}
+
+.ticket-family .ticket-icon {
+    background: #f5bd1f;
+}
+
+.ticket-pass .ticket-icon {
+    background: #35b85a;
+}
+
+
+/* ---------- CONTENU ---------- */
+
+.ticket-content {
+    padding: 0 20px 25px;
+}
+
+.ticket-label {
+    display: block;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #8b94a5;
+
+    margin-bottom: 5px;
+}
+
+.ticket-content h3 {
+    margin: 0 0 8px;
+
+    font-family: "Baloo 2", cursive;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+.ticket-content p {
+    margin: 0 auto 15px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: #7b8495;
+
+    max-width: 190px;
+}
+
+
+/* ---------- PRIX ---------- */
+
+.ticket-price {
+    display: flex;
+
+    align-items: baseline;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    margin: 10px 0 18px;
+}
+
+.ticket-price strong {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+.ticket-price span {
+    font-family: "Nunito", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+
+/* ---------- BOUTON ---------- */
+
+.ticket-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 125px;
+
+    height: 40px;
+
+    padding: 0 18px;
+
+    border-radius: 25px;
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.25s ease;
+}
+
+
+/* couleurs boutons */
+
+.ticket-child .ticket-button {
+    background: #f0444f;
+}
+
+.ticket-adult .ticket-button {
+    background: #4a78d8;
+}
+
+.ticket-family .ticket-button {
+    background: #f5bd1f;
+
+    color: #17345f !important;
+}
+
+.ticket-pass .ticket-button {
+    background: #35b85a;
+}
+
+
+.ticket-button:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(0.95);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .tickets-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .tickets-section {
+        padding: 50px 6% 60px;
+    }
+
+    .tickets-header h2 {
+        font-size: 38px;
+    }
+
+    .tickets-header p {
+        font-size: 14px;
+    }
+
+    .tickets-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+}
+.tickets-section {
+    margin-top: -120px !important;
+    padding-top: 0 !important;
+}
+/* =====================================================
+   PRÉPAREZ VOTRE JOURNÉE
+   ===================================================== */
+
+.booking-section {
+    width: 100%;
+    padding: 20px 5% 25px;
+    background: white;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 1250px;
+    height: 130px;
+    margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(31, 37, 139, 0.96),
+            rgba(43, 47, 165, 0.92)
+        ),
+        url("../images/parc-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 8px 25px rgba(23, 52, 95, 0.15);
+}
+
+
+/* ---------- ICÔNE CALENDRIER ---------- */
+
+.booking-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    margin-right: 18px;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+/* ---------- TEXTE ---------- */
+
+.booking-text {
+    width: 330px;
+
+    position: relative;
+    z-index: 3;
+}
+
+.booking-text h2 {
+    margin: 0;
+
+    font-family: "Baloo 2", cursive;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.booking-text p {
+    margin: 5px 0 0;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #ffffff;
+}
+
+
+/* ---------- FORMULAIRE ---------- */
+
+.booking-form {
+    flex: 1;
+
+    display: flex;
+    align-items: flex-end;
+
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    position: relative;
+    z-index: 4;
+}
+
+.booking-field {
+    width: 155px;
+}
+
+.booking-field label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.booking-input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    background: #fffdf0;
+
+    border-radius: 10px;
+}
+
+.booking-input i {
+    color: #17345f;
+    font-size: 12px;
+}
+
+.booking-input input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #17345f;
+}
+
+
+/* ---------- NOMBRE DE PERSONNES ---------- */
+
+.persons-field {
+    width: 155px;
+}
+
+.persons-input {
+    justify-content: space-between;
+}
+
+.persons-input span {
+    flex: 1;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    color: #17345f;
+
+    text-align: center;
+}
+
+.persons-input button {
+    width: 18px;
+    height: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    color: #17345f;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+/* ---------- BOUTON ---------- */
+
+.booking-button {
+    height: 40px;
+
+    padding: 0 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: 22px;
+
+    background: #f0445b;
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    transition: .25s ease;
+}
+
+.booking-button:hover {
+    transform: translateY(-2px);
+
+    background: #e7334d;
+}
+
+
+/* ---------- DÉCORATIONS ---------- */
+
+.booking-decoration {
+    position: absolute;
+
+    height: 5px;
+
+    border-radius: 10px;
+
+    transform: rotate(-35deg);
+
+    z-index: 2;
+}
+
+.decoration-yellow {
+    width: 45px;
+
+    left: -8px;
+    top: 48px;
+
+    background: #f5d21c;
+}
+
+.decoration-blue {
+    width: 42px;
+
+    left: -4px;
+    top: 72px;
+
+    background: #55a5f7;
+}
+
+.decoration-pink {
+    width: 45px;
+
+    right: -7px;
+    bottom: 27px;
+
+    background: #ef1682;
+}
+
+
+/* =====================================================
+   INFOS PRATIQUES
+   ===================================================== */
+
+.info-section {
+    width: 100%;
+
+    padding: 20px 5% 55px;
+
+    background: white;
+}
+
+
+/* ---------- TITRE ---------- */
+
+.info-header {
+    text-align: center;
+
+    position: relative;
+
+    margin-bottom: 18px;
+}
+
+.info-header h2 {
+    display: inline-block;
+
+    margin: 0;
+
+    font-family: "Baloo 2", cursive;
+
+    font-size: 40px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+.info-header p {
+    margin: 4px 0 0;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 18px;
+
+    color: #7b8495;
+}
+
+
+/* décorations titre */
+
+.info-decoration {
+    position: absolute;
+
+    font-size: 30px;
+
+    font-weight: 900;
+}
+
+.info-yellow {
+    color: #f4c914;
+
+    left: calc(50% - 145px);
+
+    top: -2px;
+
+    transform: rotate(-15deg);
+}
+
+.info-blue {
+    color: #3677db;
+
+    right: calc(50% - 145px);
+
+    top: 5px;
+
+    transform: rotate(15deg);
+}
+
+
+/* ---------- CARTES ---------- */
+
+.info-grid {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    min-height: 90px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 13px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(23, 52, 95, 0.08);
+}
+
+
+/* bande colorée inférieure */
+
+.info-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    right: -28px;
+    bottom: -43px;
+
+    border-radius: 50%;
+}
+
+
+/* ---------- ICÔNES ---------- */
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-right: 12px;
+}
+
+
+/* horaires */
+
+.info-hours .info-icon {
+    background: #f4cf00;
+}
+
+.info-hours::after {
+    background: #f4cf00;
+}
+
+
+/* emplacement */
+
+.info-location .info-icon {
+    background: #4e6ddd;
+}
+
+.info-location::after {
+    background: #4e6ddd;
+}
+
+
+/* contact */
+
+.info-contact .info-icon {
+    background: #40bd55;
+}
+
+.info-contact::after {
+    background: #40bd55;
+}
+
+
+/* sécurité */
+
+.info-security .info-icon {
+    background: #e91d82;
+}
+
+.info-security::after {
+    background: #e91d82;
+}
+
+
+/* ---------- CONTENU ---------- */
+
+.info-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.info-content h3 {
+    margin: 0 0 3px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+.info-content p {
+    margin: 0;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    color: #6f7a8c;
+}
+
+.info-content small {
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1100px) {
+
+    .booking-text {
+        width: 260px;
+    }
+
+    .booking-form {
+        gap: 10px;
+    }
+
+    .booking-field,
+    .persons-field {
+        width: 135px;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .booking-container {
+        height: auto;
+
+        padding: 25px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .booking-text {
+        width: auto;
+    }
+
+    .booking-form {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .booking-section {
+        padding: 25px 5%;
+    }
+
+    .booking-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .booking-form {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .booking-field,
+    .persons-field,
+    .booking-button {
+        width: 100%;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-header h2 {
+        font-size: 30px;
+    }
+}
+/* =====================================================
+   PAGE CONNEXION
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #fffdf0;
+    color: #17345f;
+}
+
+
+/* =====================================================
+   PAGE
+   ===================================================== */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #fffdf0;
+}
+
+
+/* =====================================================
+   PARTIE GAUCHE
+   ===================================================== */
+
+.login-left {
+    width: 52%;
+    min-height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(23, 52, 95, 0.97),
+            rgba(55, 76, 190, 0.94)
+        ),
+        url("../images/parc-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* décorations */
+
+.login-decoration {
+    position: absolute;
+
+    height: 7px;
+
+    border-radius: 10px;
+
+    transform: rotate(-30deg);
+}
+
+.decoration-one {
+    width: 75px;
+
+    top: 17%;
+    left: 7%;
+
+    background: #f5d21c;
+}
+
+.decoration-two {
+    width: 60px;
+
+    top: 23%;
+    left: 5%;
+
+    background: #35a9f5;
+}
+
+.decoration-three {
+    width: 70px;
+
+    bottom: 18%;
+    right: 7%;
+
+    background: #f21b86;
+    transform: rotate(30deg);
+}
+
+
+/* contenu */
+
+.login-left-content {
+    width: 80%;
+
+    position: relative;
+    z-index: 3;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* logo */
+
+.login-logo {
+    width: 190px;
+    height: 110px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+
+/* titre */
+
+.login-left-content h1 {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 55px;
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+}
+
+.login-left-content h1 span {
+    color: #f5cf19;
+}
+
+
+/* paragraphe */
+
+.login-left-content > p {
+    max-width: 470px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* illustration */
+
+.login-illustration {
+    margin-top: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.login-illustration i {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    color: white;
+
+    font-size: 22px;
+}
+
+.login-illustration i:nth-child(2) {
+    color: #f5cf19;
+}
+
+
+/* =====================================================
+   PARTIE DROITE
+   ===================================================== */
+
+.login-right {
+    width: 48%;
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+/* boîte */
+
+.login-box {
+    width: 100%;
+    max-width: 440px;
+}
+
+
+/* =====================================================
+   HEADER CONNEXION
+   ===================================================== */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef2ff;
+
+    color: #496ed8;
+
+    font-size: 23px;
+}
+
+.login-header h2 {
+    font-family: "Baloo 2", cursive;
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #17345f;
+
+    margin-bottom: 7px;
+}
+
+.login-header p {
+    font-size: 14px;
+
+    color: #7a8495;
+}
+
+
+/* =====================================================
+   ERREUR
+   ===================================================== */
+
+.login-error {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 14px;
+
+    margin-bottom: 20px;
+
+    border-radius: 9px;
+
+    background: #fff0f0;
+
+    color: #d9363e;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FORMULAIRE
+   ===================================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #17345f;
+}
+
+
+/* label + oublié */
+
+.password-label {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+}
+
+.password-label label {
+    margin-bottom: 0;
+}
+
+.password-label a {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #4a6fd5;
+
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+
+/* input */
+
+.input-box {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    border: 1.5px solid #e2e5ec;
+
+    border-radius: 11px;
+
+    background: white;
+
+    transition: 0.25s ease;
+}
+
+.input-box:focus-within {
+    border-color: #5275d8;
+
+    box-shadow: 0 0 0 3px rgba(82, 117, 216, 0.10);
+}
+
+.input-box > i {
+    color: #71809b;
+
+    font-size: 16px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 13px;
+
+    color: #17345f;
+}
+
+.input-box input::placeholder {
+    color: #a5adbb;
+}
+
+
+/* bouton oeil */
+
+.show-password {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    color: #7d8797;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   BOUTON CONNEXION
+   ===================================================== */
+
+.login-button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    background: #ef4050;
+
+    color: white;
+
+    font-family: "Nunito", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.login-button:hover {
+    background: #df3041;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(239, 64, 80, 0.22);
+}
+
+
+/* =====================================================
+   CRÉER UN COMPTE
+   ===================================================== */
+
+.register-area {
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #eceef2;
+
+    text-align: center;
+}
+
+.register-area p {
+    display: inline;
+
+    font-size: 13px;
+
+    color: #7a8495;
+}
+
+.register-area a {
+    margin-left: 5px;
+
+    color: #4a6fd5;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+.register-area a:hover {
+    text-decoration: underline;
+}
+
+.register-area a i {
+    font-size: 10px;
+
+    margin-left: 3px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .login-left {
+        width: 45%;
+    }
+
+    .login-right {
+        width: 55%;
+    }
+
+    .login-left-content h1 {
+        font-size: 42px;
+    }
+
+    .login-left-content > p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-left {
+        width: 100%;
+        min-height: 300px;
+
+        padding: 40px 20px;
+    }
+
+    .login-left-content h1 {
+        font-size: 40px;
+    }
+
+    .login-left-content > p,
+    .login-illustration {
+        display: none;
+    }
+
+    .login-logo {
+        width: 150px;
+        height: 80px;
+    }
+
+    .login-right {
+        width: 100%;
+        min-height: auto;
+
+        padding: 40px 25px 50px;
+    }
+}
+/* ==========================================
+   BOX DE CONNEXION - PARTIE DROITE
+   ========================================== */
+
+.login-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Box */
+.login-box {
+    width: 100%;
+    max-width: 440px;
+    background: #fffdf7;
+    padding: 42px 44px 35px;
+    border-radius: 24px;
+    border: 1px solid rgba(27, 19, 64, 0.08);
+    box-shadow: 0 18px 45px rgba(27, 19, 64, 0.13);
+}
+
+/* ==========================================
+   TITRE DE LA CONNEXION
+   ========================================== */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1b1340;
+    color: #ffd04d;
+
+    border-radius: 17px;
+    font-size: 23px;
+
+    box-shadow: 0 7px 18px rgba(27, 19, 64, 0.18);
+}
+
+.login-header h2 {
+    margin: 0 0 6px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 33px;
+    font-weight: 800;
+    color: red;
+}
+
+.login-header p {
+    margin: 0;
+    color: #777184;
+    font-size: 16px;
+}
+
+/* ==========================================
+   CHAMPS
+   ========================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #1b1340;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-box > i {
+    position: absolute;
+    left: 16px;
+    color: #777184;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.input-box input {
+    width: 100%;
+    height: 52px;
+
+    box-sizing: border-box;
+
+    padding: 0 45px;
+
+    border: 1.5px solid #ddd9df;
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    color: #1b1340;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+.input-box input::placeholder {
+    color: #aaa5b1;
+}
+
+.input-box input:focus {
+    border-color: #5b4fe9;
+    box-shadow: 0 0 0 4px rgba(91, 79, 233, 0.10);
+}
+
+/* ==========================================
+   MOT DE PASSE
+   ========================================== */
+
+.password-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.password-label label {
+    margin-bottom: 0;
+}
+
+.password-label a {
+    color: #5b4fe9;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+.show-password {
+    position: absolute;
+    right: 14px;
+
+    border: none;
+    background: transparent;
+
+    color: #888292;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ==========================================
+   BOUTON
+   ========================================== */
+
+.login-button {
+    width: 100%;
+    height: 54px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #e63946;
+    color: #ffffff;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(230, 57, 70, 0.22);
+
+    transition: all 0.25s ease;
+}
+
+.login-button:hover {
+    background: #d82f3d;
+    transform: translateY(-2px);
+
+    box-shadow: 0 11px 23px rgba(230, 57, 70, 0.28);
+}
+
+/* ==========================================
+   CREER UN COMPTE
+   ========================================== */
+
+.register-area {
+    text-align: center;
+
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeaf0;
+}
+
+.register-area p {
+    display: inline;
+    margin: 0;
+
+    color: #777184;
+    font-size: 14px;
+}
+
+.register-area a {
+    color: #5b4fe9;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+.register-area a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-left {
+        min-height: 380px;
+        width: 100%;
+    }
+
+    .login-right {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .login-box {
+        padding: 32px 24px;
+    }
+
+    .login-right {
+        padding: 25px 15px;
+    }
+}
+/* Correction : supprimer le double cadre des champs de connexion */
+.login-page .input-box {
+    width: 100%;
+    height: 52px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.login-page .input-box input {
+    width: 100%;
+    height: 52px;
+    box-sizing: border-box;
+
+    border: 1.5px solid #ddd9df !important;
+    border-radius: 13px;
+
+    background: #ffffff !important;
+
+    padding: 0 45px;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.login-page .input-box input:focus {
+    border-color: #5b4fe9 !important;
+    box-shadow: 0 0 0 4px rgba(91, 79, 233, 0.10) !important;
+}
+/* ==========================================
+   PAGE CONNEXION
+   ========================================== */
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    /* IMAGE DU PARC + OVERLAY BLEU MARINE */
+    background:
+        linear-gradient(
+            rgba(20, 28, 90, 0.82),
+            rgba(48, 43, 145, 0.88)
+        ),
+        url('../images/parc-hero.jpg') center center / cover no-repeat;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   PETITES DECORATIONS
+   ========================================== */
+
+.login-page::before {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 210, 28, 0.08);
+
+    top: -120px;
+    left: -100px;
+}
+
+.login-page::after {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(91, 79, 233, 0.20);
+
+    bottom: -180px;
+    right: -130px;
+}
+
+
+/* ==========================================
+   BOX BLANCHE
+   ========================================== */
+
+.login-box {
+    position: relative;
+    z-index: 5;
+
+    width: 100%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    padding: 38px 42px 32px;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.28);
+}
+
+
+/* ==========================================
+   LOGO DANS LA BOX
+   ========================================== */
+
+.login-logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.login-logo-box img {
+    width: 155px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* ==========================================
+   TITRE
+   ========================================== */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+.login-header h2 {
+    margin: 0 0 5px;
+
+    font-family: 'Baloo 2', cursive;
+
+    font-size: 35px;
+    font-weight: 800;
+
+    color: orange;
+}
+
+.login-header p {
+    margin: 0;
+
+    color: #777184;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   ERREUR
+   ========================================== */
+
+.login-error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    margin-bottom: 20px;
+
+    background: #fff0f1;
+
+    border: 1px solid #ffd0d4;
+
+    border-radius: 11px;
+
+    color: #d92f3d;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   FORMULAIRE
+   ========================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #1b1340;
+
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+/* ==========================================
+   INPUT
+   ========================================== */
+
+.input-box {
+    position: relative;
+
+    width: 100%;
+    height: 52px;
+
+    border: none !important;
+
+    background: transparent !important;
+
+    padding: 0 !important;
+
+    box-shadow: none !important;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-box > i {
+    position: absolute;
+
+    left: 16px;
+
+    color: #777184;
+
+    font-size: 15px;
+
+    z-index: 2;
+}
+
+.input-box input {
+    width: 100%;
+    height: 52px;
+
+    box-sizing: border-box;
+
+    padding: 0 45px;
+
+    border: 1.5px solid #ddd9df !important;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    color: #1b1340;
+
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.input-box input::placeholder {
+    color: #aaa5b1;
+}
+
+.input-box input:focus {
+    border-color: #5b4fe9 !important;
+
+    box-shadow:
+        0 0 0 4px rgba(91, 79, 233, 0.10);
+}
+
+
+/* ==========================================
+   MOT DE PASSE
+   ========================================== */
+
+.password-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+.password-label label {
+    margin-bottom: 0;
+}
+
+.password-label a {
+    color: #5b4fe9;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+
+/* OEIL */
+
+.show-password {
+    position: absolute;
+
+    right: 14px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #888292;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   BOUTON
+   ========================================== */
+
+.login-button {
+    width: 100%;
+    height: 54px;
+
+    margin-top: 4px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #e63946;
+
+    color: white;
+
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 9px 20px rgba(230, 57, 70, 0.25);
+
+    transition: 0.25s ease;
+}
+
+.login-button:hover {
+    background: #d82f3d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 25px rgba(230, 57, 70, 0.30);
+}
+
+
+/* ==========================================
+   CREER UN COMPTE
+   ========================================== */
+
+.register-area {
+    text-align: center;
+
+    margin-top: 24px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.register-area p {
+    display: inline;
+
+    margin: 0;
+
+    color: #777184;
+
+    font-size: 15px;
+}
+
+.register-area a {
+    color: #5b4fe9;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    margin-left: 4px;
+}
+
+.register-area a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   TELEPHONE
+   ========================================== */
+
+@media (max-width: 500px) {
+
+    .login-page {
+        padding: 20px 15px;
+    }
+
+    .login-box {
+        padding: 30px 24px 28px;
+
+        border-radius: 20px;
+    }
+
+    .login-logo-box img {
+        width: 110px;
+    }
+
+    .login-header h2 {
+        font-size: 28px;
+    }
+
+}
+/* ==========================================
+   PAGE CREATION DE COMPTE
+   ========================================== */
+
+.register-page {
+
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            rgba(20, 28, 90, 0.82),
+            rgba(48, 43, 145, 0.88)
+        ),
+        url('../images/parc-hero.jpg')
+        center center / cover no-repeat;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   BOX
+   ========================================== */
+
+.register-box {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: #ffffff;
+
+    padding: 32px 42px 28px;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.30);
+}
+
+
+/* ==========================================
+   LOGO
+   ========================================== */
+
+.register-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+.register-logo img {
+
+    width: 120px;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* ==========================================
+   TITRE
+   ========================================== */
+
+.register-header {
+
+    text-align: center;
+
+    margin-bottom: 22px;
+}
+
+.register-header h1 {
+
+    margin: 0 0 4px;
+
+    font-family: 'Baloo 2', cursive;
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    color: ORANGE;
+}
+
+.register-header p {
+
+    margin: 0;
+
+    color: #777184;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   ERREUR
+   ========================================== */
+
+.register-error {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    background: #fff0f1;
+
+    border: 1px solid #ffd0d4;
+
+    color: #d92f3d;
+
+    border-radius: 10px;
+
+    padding: 10px 12px;
+
+    margin-bottom: 17px;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   CHAMPS
+   ========================================== */
+
+.register-form-group {
+
+    margin-bottom: 14px;
+}
+
+.register-form-group label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #1b1340;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.register-form-group label span {
+
+    color: #e63946;
+}
+
+.register-form-group input {
+
+    width: 100%;
+
+    height: 42px;
+
+    box-sizing: border-box;
+
+    padding: 0 13px;
+
+    border: 1.5px solid #ddd9df;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    color: #1b1340;
+
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.register-form-group input:focus {
+
+    border-color: #5b4fe9;
+
+    box-shadow:
+        0 0 0 3px rgba(91, 79, 233, 0.10);
+}
+
+
+/* ==========================================
+   BOUTON
+   ========================================== */
+
+.register-button {
+
+    width: 100%;
+
+    height: 45px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #e63946;
+
+    color: #ffffff;
+
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 16px rgba(230, 57, 70, 0.23);
+
+    transition: 0.25s ease;
+}
+
+.register-button:hover {
+
+    background: #d82f3d;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   RETOUR CONNEXION
+   ========================================== */
+
+.register-login {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eeeeee;
+
+    font-size: 15px;
+
+    color: #777184;
+}
+
+.register-login a {
+
+    margin-left: 4px;
+
+    color: #5b4fe9;
+
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+.register-login a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 500px) {
+
+    .register-page {
+
+        padding: 20px 15px;
+    }
+
+    .register-box {
+
+        padding: 28px 23px;
+    }
+
+    .register-logo img {
+
+        width: 105px;
+    }
+
+    .register-header h1 {
+
+        font-size: 26px;
+    }
+}
